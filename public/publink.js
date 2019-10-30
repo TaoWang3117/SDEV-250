@@ -1,5 +1,6 @@
+import { linkSync } from "fs";
 
-const serverUrl = "http://localhost:3000";
+const serverUrl = "http://localhost:3000"
 
 const contentElement = document.getElementById("content");
 
@@ -66,7 +67,7 @@ const submitLink = e => {
         })
         
         .catch(err => {
-            console.error(err);
+            console.error(err.message);
         });
 };
 
@@ -103,7 +104,7 @@ fetch(`${serverUrl}/api/links`)
         });
     })
     .catch(err => {
-        console.error(err);
+        console.error(err.message);
     });
 
 document.getElementById("submitButton").addEventListener("click", () => {
