@@ -1,4 +1,4 @@
-const serverUrl = "http://localhost:5000"
+const serverUrl = "https://murmuring-ravine-55393.herokuapp.com"
 
 const contentElement = document.getElementById("content");
 
@@ -19,7 +19,7 @@ const createLinkElement = link => {
 
     const authorElement = document.createElement("span");
     authorElement.classList.add("linkAuthor");
-    authorElement.appendChild(doc.createTextNode(`Submitted by ${link.author}`));
+    authorElement.appendChild(document.createTextNode(`Submitted by ${link.author}`));
 
     const linkElement = document.createElement("div");
     linkElement.classList.add("link");
