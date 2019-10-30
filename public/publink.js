@@ -1,6 +1,4 @@
-import { linkSync } from "fs";
-
-const serverUrl = "http://localhost:3000"
+const serverUrl = "http://localhost:5000"
 
 const contentElement = document.getElementById("content");
 
