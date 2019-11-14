@@ -95,7 +95,7 @@ const createLinkForm = () => {
 
 fetch(`${serverUrl}/api/links`)
     .then(response => response.json())
-    .then(link => {
+    .then(links => {
         links.forEach(link =>{
             const linkElement = createLinkElement(link);
             contentElement.appendChild(linkElement);
